@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+  --background: rgb(202, 225, 237);
+  --grey: rgb(212, 212, 212);
+  --black: #111;
+  --white: #fff;
+  --blue: rgba(0, 136, 169, 1);
+  --accent: rgb(71, 88, 195);
+  --green: #006d5b;
+  --translucent: #000000bd;
+}
+
+body {
+  /* background-color: var(--background); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0.095)),
+    url("../public/Images/tree-background.jpg"); */
+  background-image: url("../public/Images/tree-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+input {
+  display: block;
+  font-size: 1.6rem;
+  height: 2.5em;
+  /* max-width: 100%; */
+  border: 1px solid grey;
+  padding: 0.625em 0.5em;
+  border-radius: 2px;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+h3 {
+  color: var(--black);
+  margin: 0.5em 0;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+h2 {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-bottom: 2em;
+}
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0em;
+}
+
+p {
+  color: var(--grey);
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  margin-top: 2em;
+}
+
+.btn {
+  padding: 0.6em 1.5em;
+  height: 2.5em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 1.6rem;
+  border: none;
+  margin-top: 1em;
+}
+
+.btn i {
+  font-size: 2rem;
+}
+
+.btn-continue {
+  color: #fff;
+  background-color: #2a2222;
+  border: none;
+  border-radius: 2px;
+  margin-top: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.btn-continue:hover {
+  background-color: #1d1818;
+}
+
+.form {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.678) 0px 3px 8px;
+  display: flex;
+  width: max-content;
+  margin: auto;
+  overflow: hidden;
+  min-height: 600px;
+  margin-top: 50px;
+  background-color: var(--white);
+  max-width: 100%;
+}
+.form section:nth-child(1) {
+  padding: 5em;
+  background-color: var(--accent);
+  max-width: 80em;
+}
+.form section:nth-child(2) {
+  padding: 2.5em;
+  background-color: var(--white);
+  max-width: 30em;
+}
+
+.table-container {
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1.5fr 0.5fr;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.row {
+  font-size: 2rem;
+  padding: 0.5em;
+  background-color: var(--white);
+  font-weight: 500;
+}
+
+.home-container {
+  /* background-color: var(--green); */
+  background-color: var(--translucent);
+  min-height: 100vh;
+  padding: 2em;
+  width: 75%;
+}
+
+.home-container h1 {
+  font-size: 5rem;
+  padding: 0.2em 0;
+}
+
+.home-container p {
+  font-size: 1.6rem;
+  padding-right: 6.25em;
+}
+
+.form-container {
+  /* background-color: var(--green); */
+  background-color: var(--translucent);
+  min-height: 100vh;
+  /* max-width: 1100px; */
+  padding: 2em;
+  width: 100%;
+}
+
+.form-container h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.form-container form {
+  font-size: 1.6rem;
+  max-width: 50em;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.form-container form label {
+  color: var(--white);
+}
+
+.form-container form input {
+  background-color: #00000000;
+  color: var(--white);
+}
+
+select {
+  font-size: 1.6rem;
+  width: 100%;
+  max-width: 50em;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.263);
+  color: var(--white);
+  border-radius: 2px;
+  padding: 0.5em 0.5em;
+  margin-top: 2em;
+}
+
+select option {
+  background-color: var(--black);
+}
+
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.484);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+.pop-up-inner {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+  max-width: 50em;
+  max-height: 10em;
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+.pop-up-inner .btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+}
+
+.pop-up-inner p {
+  color: var(--black);
+  margin: 0;
+  font-weight: 800;
+}
+
+/* loader */
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.863);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-spinner {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #383636; /* Light grey */
+  border-top: 5px solid #f3f3f3; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+/* scrool bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(9, 42, 17, 0.585);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media screen and (max-width: 850px) {
+  .form-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .home-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .home-container p {
+    font-size: 1.4rem;
+    padding: 0;
+  }
+
+  .home-container {
+    width: 100%;
+  }
+
+  .pop-up-inner {
+    max-width: 30em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-container h1 {
+    font-size: 2.8rem;
+  }
+
+  .home-container h1 {
+    font-size: 2.8rem;
+  }
+
+  .home-container p {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .home-container {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+
+  .pop-up-inner {
+    max-width: 20em;
+    max-height: 8em;
+  }
+
+  .pop-up-inner p {
+    font-size: 1.4rem;
+  }
+}
